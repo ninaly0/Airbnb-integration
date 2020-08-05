@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <!-- Header notification information-->
+        <section class="notification header-information">
+            <a class="has-text-weight-semibold"href="https://www.airbnb.fr/resources/hosting-homes">
+                Accédez aux dernières informations sur les mesures prises par Airbnb face au COVID-19
+            </a>
+        </section>
+        <!-- / Header notification information-->
+
+        <!-- Header Logo + identification -->
+
+        <section class="level container mt-1 header-menu is-mobile">
+                <div class="level-left">
+                    <div class="level-item header-menu-logo">
+                        <a class="button is-white" href="#">
+                            <span class="icon is-3">
+                                <i class="fab fa-airbnb"></i>
+                            </span>
+                            <span class="ml-2 has-text-weight-semibold is-size-4">airbnb</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="level-right is-pulled-right">
+                    <div class="level-item header-menu-right">
+                        <div class="dropdown">
+                            <div class="dropdown-trigger">
+                                <button class="button btn-language is-rounded px-2" aria-haspopup="true" aria-controls="dropdown-menu">
+                                    <span class="icon px-1 py-1">
+                                        <i class="fas fa-globe pl-2"></i>
+                                    </span>
+                                    <span class="icon is-small">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <a href="#" class="dropdown-item">
+                                        <span class="icon">
+                                            <i class="fas fa-globe"></i>
+                                        </span>
+                                        <span>
+                                            Français (FR)
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <span class="icon">
+                                            <i class="fas fa-euro-sign is-size-1"></i>
+                                        </span>
+                                        <span>
+                                            EUR
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level-item">
+                        <div class="dropdown is-active">
+                            <div class="dropdown-trigger">
+                                <button class="button btn-user is-rounded px-4 py-4" aria-haspopup="true" aria-controls="dropdown-menu">
+                                    <span class="icon">
+                                        <i class="fas fa-bars pl-1"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fas fa-user-circle is-size-4 pl-2 pr-2"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+
+        <!-- / Header Logo + identification -->
+    </header>
+
+    <!-- Navbar + research bar -->
+    <section class="section container">
+        <nav class="tabs mb-4">
+            <ul>
+                <li class="is-active has-text-black">
+                    <a class="has-text-black" href="#">Hébergements</a>
+                </li>
+                <li class="has-text-black">
+                    <a href="#">Expériences</a>
+                </li>
+                <li class="has-text-black">
+                    <a href="#">
+                        Expériences en ligne
+                        <span class="tag ml-3 is-black is-small">NOUVEAU</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="research-bar container">
+            <form class="form columns">
+                <div class="column is-4 px-5 research-adress">
+                    <label for="adress" class="label is-size-7">ADRESSE</label>
+                    <input type="text" id="adress" placeholder="Où allez vous?">
+                </div>
+                <div class="column px-5 research-date-arrive">
+                    <label for="arrival" class="label is-size-7">ARRIVEE</label>
+                    <input id="arrival" placeholder="Ajoutez des dates">
+                </div>
+                <div class="column px-5 research-date-departure">
+                    <label for="departure" class="label is-size-7">DEPART</label>
+                    <input id="departure" placeholder="Ajoutez des dates">
+                </div>
+                <div class="column px-5 research-travelers">
+                    <label for="nb-travelers" class="label is-size-7">VOYAGEURS</label>
+                    <input id="nb-travelers" placeholder="Ajoutez des voyageurs" type="number">
+                </div>
+                <div class="column is-narrow px-5 research-button">
+                    <button class="button is-normal has-text-white has-text-weight-semibold research-btn" type="submit">
+                        <span>
+                            <i class="fas fa-search mr-2"></i>
+                        </span>
+                        <span class="is-hidden-touch is-hidden-desktop-only">Rechercher</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- / Navbar + research bar -->
+
+    <!-- Title and Cards -->
+    <div class="section is-flex-tablet-only">
+        <div class="container">
+            <!-- Title-->
+            <div class="columns">
+                <div class="column is-6">
+                    <h1 class="title is-1 my-5 has-text-weight-normal catchphrase">
+                        Inutile de s'éloigner pour trouver ce qui compte.
+                    </h1>
+                </div>
+            </div>
+            <!-- Cards -->
+            <div class="columns">
+                <div class="column is-4">
+                    <a class="card" href="#">
+                            <div class="card-image">
+                                <figure class="image is-4by2">
+                                    <img src="img/card-image1.jpg" alt="inline-experience">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="title is-4 mb-1">
+                                    Expériences en ligne
+                                </h2>
+                                <p class="content is-size-6">
+                                    Des activités uniques à faire ensemble, organisées par des hôtes du monde entier.
+                                </p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="column is-4">
+                    <a class="card" href="#">
+                            <div class="card-image">
+                                <figure class="image is-4by2">
+                                    <span class="tag is-white is-normal">
+                                        NOUVEAU
+                                    </span>
+                                    <img src="img/card-image2.jpg" alt="inline-experience">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="title is-4 mb-1">
+                                    Escapades à proximité
+                                </h2>
+                                <p class="content is-size-6">
+                                    Faites un break et ressourcez-vous à deux pas de chez vous.
+                                </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-4">
+                    <a class="card" href="#">
+                            <div class="card-image">
+                                <figure class="image is-4by2">
+                                    <img src="img/card-image3.jpg" alt="inline-experience">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="title is-4 mb-1">
+                                    Logements entiers
+                                </h2>
+                                <p class="content is-size-6">
+                                    Des logements entiers confortables, avec de la place pour accueillir les amis ou la famille.
+                                </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+       
+
+      <!-- Banner tiles -->
+    <section class="section has-background-black mt-6 pb-6">
+        <div class="container">
+            <div class="columns header-banner is-tablet">
+                <div class=" column py-2 px-0 is-10 mt-6 title-banner has-text-white">
+                    <h1 class="title has-text-white">
+                        Des expériences en ligne avec des grands chefs
+                    </h1>
+                    <p class="content mt-3">
+                        Cuisinez avec des légendes culinaires et découvrez l'histoire de leurs plats préférés. Participez à des activités interactives, exclusives et animées par des hôtes exceptionnels, sans sortir de chez vous.
+                    </p>
+                </div>
+                <div class="column py-2 px-0 is-2 mt-6 mb-5 button is-centered">
+                    <a class="has-text-weight-semibold has-text-white is-size-6" href="#">Tout découvrir</a>
+                </div>
+            </div>
+            <!-- Tiles -->
+            <div class="tile is-ancestor mb-5">
+                <!-- Premiere colonne -->
+                <div class="tile is-6 is-parent">
+                    <a href="#">
+                        <div class="tile is-child left-tile">
+                            <figure class="image first-image-tile">
+                                <img class="rounded-img" src="img/tile-image1.jpg">
+                            </figure>
+                            <div class="content content-subtitle px-4 py-4">
+                                <p class="subtitle has-text-white has-text-weight-semibold is-size-6">
+                                    Apprenez des recettes estivales avec le célèbre chef Rōze Traore
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Deuxième colonne -->
+                <div class="tile is-vertical is-6">
+                    <!-- haut de la 2e colonne -->
+                    <div class="tile is-parent double-tile">
+                        <a href="#">
+                            <div class="tile is-child mr-3">
+                                <figure class="image second-image-tile">
+                                    <img class="rounded-img" src="img/tile-image2.jpg">
+                                </figure>
+                                <div class="content content-subtitle px-4 py-4">
+                                    <p class="subtitle has-text-white has-text-weight-semibold is-size-6">
+                                        Fruits de mer avec le chef Michelin Marc Favier
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="ml-4" href="#">
+                            <div class="tile is-child">
+                                <figure class="image third-image-tile">
+                                    <img class="rounded-img" src="img/tile-image3.jpg">
+                                </figure>
+                                <div class="content content-subtitle px-4 py-4">
+                                    <p class="subtitle has-text-white has-text-weight-semibold is-size-6">
+                                        Association de saveurs et dressage avec le chef Michelin Soo Ahn
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+  
+                    </div>
+                    <!-- bas de la 2e colonne -->      
+                    <div class="tile is-parent is-hidden-touch is-hidden-desktop-only">
+                        <a href="#">
+                            <div class="tile is-child down-tile">
+                                <figure class="image fourth-image-tile">
+                                    <img class="rounded-img" src="img/tile-image4.jpg">
+                                </figure>
+                                <div class="content content-subtitle px-4 py-4">
+                                    <p class="subtitle has-text-white has-text-weight-semibold is-size-6">
+                                        Cuisinez de saison avec Anthea Stephenson, chef vedette à Londres
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </section>
+      <!-- /Banner tiles -->
+
+    <!-- Hero black lives matter-->
+    <section class="container">
+        <section class="hero is-black black-lives-matter is-large mt-5"> 
+            <div class="content px-6 py-6">
+                <h2 class="title is-3">
+                    Nous soutenons le mouvement
+                    #BlackLivesMatter
+                </h2>
+                <p class="subtitile">
+                    Nous croyons en un monde fondé sur l’inclusion et le respect, et où le racisme n’a pas sa place.
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <!-- /Hero black lives matter-->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="mb-5">
+                <div class="columns">
+                    <div class="column">
+                        <h4 class="title is-size-7 has-text-weight-bold mt-4 is-6">
+                            À PROPOS
+                        </h4>
+                        <ul>
+                            <li class="mt-4" >
+                                <a class="has-text-black" href="#">Fonctionnement d'Airbnb</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Diversité et intégration</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Accessibilité</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Confiance et sécurité</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Airbnb Citizen</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Jeux olympiques</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Newsroom</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4 class="title is-size-7 has-text-weight-bold mt-4">
+                            COMMUNAUTÉ
+                        </h4>
+                        <ul>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Airbnb Magazine</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Partenaires Airbnb</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Airbnb for Work</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Inviter des amis</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Carrières</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4 class="title is-size-7 has-text-weight-bold mt-4">
+                            HÔTE
+                        </h4>
+                        <ul>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Héberger des voyageurs</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Organiser une expérience en ligne</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Message de Brian Chesky, président d'Airbnb</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Accueil responsable</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Open Homes</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Centre de ressources</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Community Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4 class="title is-size-7 has-text-weight-bold mt-4">
+                            ASSISTANCE
+                        </h4>
+                        <ul>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Dernières informations relatives au COVID-19</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Centre d'aide</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Options d'annulation</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="has-text-black" href="#">Service d'aide aux voisins</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-border-separate"></div>
+
+            <div class="level mt-4">
+                <div class="level-left footer-footer-left">
+                    <div class="footer-footer-left-copyright">
+                        <p class="has-text-black">
+                            © 2020 Airbnb, Inc. All rights reserved
+                        </p>
+                        <nav class="breadcrumb mt-1 has-bullet-separator" aria-label="breadcrumbs">
+                            <ul>
+                                <li><a class="has-text-black" href="#">Confidentialité</a></li>
+                                <li><a class="has-text-black" href="#">Conditions</a></li>
+                                <li><a class="has-text-black" href="#">Plan du site</a></li>
+                                <li><a class="has-text-black" href="#" aria-current="page">Fonctionnement du site</a></li>
+                                <li><a class="has-text-black" href="#">Information sur l'entreprise</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="level-right footer-footer-right mb-3">
+                    <div class="level-item footer-footer-language">
+                        <span class="icon">
+                            <i class="fas fa-globe"></i>
+                        </span>
+                        <a class="has-text-black has-text-weight-semibold" href="#">Français (FR)</a>
+                    </div>
+                    <div class="level-item mr-6 footer-footer-currency">
+                        <span class="icon">
+                            <i class="fas fa-euro-sign"></i>
+                        </span>
+                        <a class="has-text-black has-text-weight-semibold" href="#">EUR</a>
+                    </div>
+                    <ul class="level-item mb-3">
+                        <li>
+                            <a class="has-text-black" href="#">
+                                <span class="icon is-size-5 mr-4">
+                                    <i class="fab fa-facebook-f "></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="has-text-black" href="#">
+                                <span class="icon is-size-5 mr-4">
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="has-text-black" href="#">
+                                <span class="icon is-size-5">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- / Footer -->
+  </body>
+</html>

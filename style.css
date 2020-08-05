@@ -1,0 +1,349 @@
+/** 
+    Header notification information
+**/
+header .header-information {
+    width:100%;
+}
+
+header .notification {
+    color:#000000;
+    text-align: center;
+    font-weight:bold;
+    font-size: 14px;
+}
+
+/**
+    Header Logo + identification
+**/
+
+.header-menu .header-menu-logo .fa-airbnb,
+.header-menu-logo a span {
+    color:#FF385D;
+}
+.header-menu .header-menu-logo .fa-airbnb {
+    font-size: 36px;
+}
+.btn-language {
+    border:none;
+}
+.btn-language:hover {
+    background:#F7F7F7;
+    transition: 0.2s;
+}
+.btn-user:hover {
+    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.18);
+    transition: 0.2s ease-out;
+}
+.button.is-rounded {
+    padding-left:calc(0.3em + 0.3em);
+    padding-right:calc(0.3em + 0.3em);
+}
+.header-menu-right span .fa-bars {
+    font-size:14px;
+}
+.header-menu-right span .fa-user-circle {
+    font-size:26px;
+    color:#717171;
+}
+
+/**
+    Navbar
+**/
+.tabs ul{
+    border-bottom: none;
+}
+.tabs ul li:first-child {
+    border-bottom-color: #000000;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.tabs ul li a:hover {
+    color:#595959;
+}
+.tabs li.is-active a {
+    border-bottom-color:black;
+}
+
+/**
+    Research bar
+**/
+
+.form {
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form div.column{
+    border-left:0.3px solid #B0B0B0;
+}
+.form div.column:first-child {
+    border-left:none;
+}
+.form + div.column {
+    border-right:none;
+}
+.research-bar {
+    border:1px solid #B0B0B0;
+    border-radius: 10px;
+}
+.research-bar form div input {
+    border:none;
+    outline:none;
+    width:100%;
+}
+.research-bar form .label {
+    cursor:pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.research-bar .form div.column {
+    position: relative;
+    border:2px solid transparent;
+    border-radius:10px;
+}
+
+.research-bar .form div.column:before {
+    content: '';
+    height: calc(100% + 2px + 2px);
+    width: 1px;
+    background: #B0B0B0;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.research-bar .form div.column:hover {
+    border-color: #B0B0B0;
+}
+
+.research-bar .form div.column:last-child:hover {
+    border-color: transparent;
+}
+
+.research-bar .form div.column:first-child:before,
+.research-bar .form div.column:not(:last-child):hover:before,
+.research-bar .form div.column:hover + div.column:before {
+    background: transparent;
+}
+
+.columns{
+    padding:0;
+    margin:0;
+}
+.columns:last-child {
+    margin-bottom:0;
+}
+.research-travelers {
+    white-space:nowrap;
+}
+.research-travelers input {
+    text-overflow: ellipsis;
+}
+.research-btn {
+    background:linear-gradient(to right,
+      #FF385C 0%,
+      #E61E4D 27.5%,
+      #E31C5F 40%,
+      #D70466 57.5%,
+      #BD1E59 75%,
+      #BD1E59 100%
+    );
+    border-radius:10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/**
+    Title
+**/
+
+.catchphrase {
+    background:linear-gradient(to right,
+     #BD1E59 0%,
+     #BD1E59 27.5%,
+     #D70466 40%,
+     #E31C5F 57.5%,
+     #E61E4D 75%,
+     #FF385C 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+/**
+    Cards
+**/
+
+.card {
+    display:block;
+    height:100%;
+    border-radius:10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+.card-content {
+    padding:1rem;
+}
+.card-content p {
+    color:#9E9E9E;
+}
+.card-image figure img {
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.tag.is-white {
+    position:absolute;
+    top:15px;
+    left:15px;
+}
+
+/**
+    Banner tiles
+**/
+.header-banner div.button {
+    border-radius:10px;
+    background-color: transparent;
+}
+.header-banner div.button:hover {
+    background: #717171;
+}
+.header-banner .title-banner p {
+    max-width:460px;
+}
+.content-subtitle {
+    background:#222222;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+figure.image,
+.rounded-img {
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+div.left-tile .content-subtitle p,
+div.down-tile .content-subtitle p {
+    max-width: 256px;
+}
+.first-image-tile img {
+    max-height:500px;
+}
+.second-image-tile img {
+    max-height:200px;
+}
+.third-image-tile img {
+    max-height:185px;
+}
+.tile figure img {
+    object-fit:cover;
+    object-position: top;
+}
+.double-tile div,
+.double-tile figure {
+    max-width:275px;
+}
+.fourth-image-tile img {
+    max-width:560px;
+    max-height:180px;
+}
+
+
+/**
+    Hero black lives matter
+**/
+
+.black-lives-matter {
+    border-radius:10px;
+}
+.black-lives-matter .content {
+    max-width:385px;
+}
+
+.black-lives-matter div h2 {
+    padding-top:30px;
+}
+
+/**
+    FOOTER
+**/
+
+.footer {
+    background-color: #F7F7F7;
+    margin-top:15px;
+    border-top: 0.5px solid #DDDDDD;
+    color:#000000;
+    padding:3rem 1.5rem 3rem;
+}
+.footer .columns .column ul li a:hover {
+    border-bottom:1px solid black;
+    color:#595959;
+    transition:0.1s;
+}
+.footer .columns .column ul li {
+    font-size: 14px;
+}
+.footer-border-separate {
+    border-top: 0.5px solid #DDDDDD;
+}
+
+.level {
+    font-size: 14px;
+}
+.breadcrumb {
+    font-size:14px;
+}
+.breadcrumb ul li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1100px) {
+    .footer .level {
+        flex-direction: column-reverse;
+    }
+    .footer .level-left .footer-footer-left-copyright p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .double-tile div,
+    .double-tile figure {
+        max-width:100%;
+    }
+    .double-tile figure img {
+        max-height:596px;
+    }
+    .footer .level-right {
+        width:100%;
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .footer .level {
+        display:flex;
+        flex-direction:column-reverse;
+        width:100%;
+    }
+    .footer .level-left {
+        width:100%;
+        padding-left: 5px;
+    }
+    .footer .level-left .footer-footer-left-copyright p {
+        text-align:left;
+    }
+    .research-bar .form div.column:before {
+        content:none;
+    }
+}

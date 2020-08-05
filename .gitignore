@@ -1,0 +1,24 @@
+#System and other files 
+.DS_Store
+.idea/
+*.kate-swp
+*.desktop
+*.thumb
+*.sublime*
+.vscode
+
+#Modules and production folders
+build/
+node_modules/
+jspm_packages/
+bower_components/
+
+#Some logs
+logs
+*.log
+npm-debug.log*
+
+*.seed
+coverage
+.npm
+.tmp
