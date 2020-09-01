@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <!-- HEADER -->
     <header>
         <!-- Header notification information-->
         <section class="notification header-information">
-            <a class="has-text-weight-semibold"href="https://www.airbnb.fr/resources/hosting-homes">
+            <a class="has-text-weight-semibold" href="https://www.airbnb.fr/resources/hosting-homes">
                 Accédez aux dernières informations sur les mesures prises par Airbnb face au COVID-19
             </a>
         </section>
@@ -21,72 +22,72 @@
         <!-- Header Logo + identification -->
 
         <section class="level container mt-1 header-menu is-mobile">
-                <div class="level-left">
-                    <div class="level-item header-menu-logo">
-                        <a class="button is-white" href="#">
-                            <span class="icon is-3">
-                                <i class="fab fa-airbnb"></i>
-                            </span>
-                            <span class="ml-2 has-text-weight-semibold is-size-4">airbnb</span>
-                        </a>
-                    </div>
+            <div class="level-left">
+                <div class="level-item header-menu-logo">
+                    <a class="button is-white" href="#">
+                        <span class="icon is-3">
+                            <i class="fab fa-airbnb"></i>
+                        </span>
+                        <span class="ml-2 has-text-weight-semibold is-size-4">airbnb</span>
+                    </a>
                 </div>
-                <div class="level-right is-pulled-right">
-                    <div class="level-item header-menu-right">
-                        <div class="dropdown">
-                            <div class="dropdown-trigger">
-                                <button class="button btn-language is-rounded px-2" aria-haspopup="true" aria-controls="dropdown-menu">
-                                    <span class="icon px-1 py-1">
-                                        <i class="fas fa-globe pl-2"></i>
-                                    </span>
-                                    <span class="icon is-small">
-                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                                <div class="dropdown-content">
-                                    <a href="#" class="dropdown-item">
-                                        <span class="icon">
-                                            <i class="fas fa-globe"></i>
-                                        </span>
-                                        <span>
-                                            Français (FR)
-                                        </span>
-                                    </a>
-                                    <a class="dropdown-item">
-                                        <span class="icon">
-                                            <i class="fas fa-euro-sign is-size-1"></i>
-                                        </span>
-                                        <span>
-                                            EUR
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
+            </div>
+            <div class="level-right is-pulled-right">
+                <div class="level-item header-menu-right">
+                    <div class="dropdown">
+                        <div class="dropdown-trigger">
+                            <button class="button btn-language is-rounded px-2" aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span class="icon px-1 py-1">
+                                    <i class="fas fa-globe pl-2"></i>
+                                </span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
                         </div>
-                    </div>
-                    <div class="level-item">
-                        <div class="dropdown is-active">
-                            <div class="dropdown-trigger">
-                                <button class="button btn-user is-rounded px-4 py-4" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
                                     <span class="icon">
-                                        <i class="fas fa-bars pl-1"></i>
+                                        <i class="fas fa-globe"></i>
                                     </span>
+                                    <span>
+                                        Français (FR)
+                                    </span>
+                                </a>
+                                <a class="dropdown-item">
                                     <span class="icon">
-                                        <i class="fas fa-user-circle is-size-4 pl-2 pr-2"></i>
+                                        <i class="fas fa-euro-sign is-size-1"></i>
                                     </span>
-                                </button>
+                                    <span>
+                                        EUR
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="level-item">
+                    <div class="dropdown is-active">
+                        <div class="dropdown-trigger">
+                            <button class="button btn-user is-rounded px-4 py-4" aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span class="icon">
+                                    <i class="fas fa-bars pl-1"></i>
+                                </span>
+                                <span class="icon">
+                                    <i class="fas fa-user-circle is-size-4 pl-2 pr-2"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-
         <!-- / Header Logo + identification -->
     </header>
+
+     <!-- / HEADER -->
+
 
     <!-- Navbar + research bar -->
     <section class="section container">
@@ -108,7 +109,7 @@
         </nav>
         <div class="research-bar container">
             <form class="form columns">
-                <div class="column is-4 px-5 research-adress">
+                <div class="column is-4 px-5 research-address">
                     <label for="adress" class="label is-size-7">ADRESSE</label>
                     <input type="text" id="adress" placeholder="Où allez vous?">
                 </div>
@@ -234,7 +235,7 @@
                     <a href="#">
                         <div class="tile is-child left-tile">
                             <figure class="image first-image-tile">
-                                <img class="rounded-img" src="img/tile-image1.jpg">
+                                <img class="rounded-img" src="img/tile-image1.jpg" alt="recettes Roze Traore">
                             </figure>
                             <div class="content content-subtitle px-4 py-4">
                                 <p class="subtitle has-text-white has-text-weight-semibold is-size-6">
@@ -251,7 +252,7 @@
                         <a href="#">
                             <div class="tile is-child mr-3">
                                 <figure class="image second-image-tile">
-                                    <img class="rounded-img" src="img/tile-image2.jpg">
+                                    <img class="rounded-img" src="img/tile-image2.jpg" alt="Chef Michelin Marc Favier">
                                 </figure>
                                 <div class="content content-subtitle px-4 py-4">
                                     <p class="subtitle has-text-white has-text-weight-semibold is-size-6">
@@ -264,7 +265,7 @@
                         <a class="ml-4" href="#">
                             <div class="tile is-child">
                                 <figure class="image third-image-tile">
-                                    <img class="rounded-img" src="img/tile-image3.jpg">
+                                    <img class="rounded-img" src="img/tile-image3.jpg" alt="Chef Michelin Soo Ahn">
                                 </figure>
                                 <div class="content content-subtitle px-4 py-4">
                                     <p class="subtitle has-text-white has-text-weight-semibold is-size-6">
@@ -280,7 +281,7 @@
                         <a href="#">
                             <div class="tile is-child down-tile">
                                 <figure class="image fourth-image-tile">
-                                    <img class="rounded-img" src="img/tile-image4.jpg">
+                                    <img class="rounded-img" src="img/tile-image4.jpg" alt="Chef Anthea Stephenson">
                                 </figure>
                                 <div class="content content-subtitle px-4 py-4">
                                     <p class="subtitle has-text-white has-text-weight-semibold is-size-6">
@@ -437,6 +438,7 @@
                                 <li><a class="has-text-black" href="#" aria-current="page">Fonctionnement du site</a></li>
                                 <li><a class="has-text-black" href="#">Information sur l'entreprise</a></li>
                             </ul>
+                        </nav>
                     </div>
                 </div>
                 <div class="level-right footer-footer-right mb-3">
